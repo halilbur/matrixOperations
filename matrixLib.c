@@ -275,6 +275,9 @@ float **covarianceMatrix(float **mat, int row, int col)
         // Calculate the multiplication of the Xc matrix and the transpose of the Xc matrix
         covMatMultiply = (matrixMultiplication(covMat, covMatT, row, col, col, col));
         // Return the covariance matrix
+        freeMatrix(covMat, row);
+        freeMatrix(covMatT, col);
+        free(colMeans);
         return matrixMultiplicationWithNumber(covMatMultiply, col, col, 1.0 / (row));
     }
     else
