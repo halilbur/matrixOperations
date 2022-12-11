@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     free(vector);
     printf("----------------------------------\n");
 
-    printf("----------returnVector------------\n");
+    printf("----------returnMatrix------------\n");
     float **matrix = returnMatrix(2, 2);
     printMatrix(matrix, 2, 2);
     freeMatrix(matrix, 2);
