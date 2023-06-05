@@ -1,4 +1,4 @@
-# bp3Project1
+# MatrixOperations
 A function library for matrix operations. Coded in C programing Langugage
 
 # run 
